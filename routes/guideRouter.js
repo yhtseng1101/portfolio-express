@@ -18,10 +18,10 @@ guideRouter.route('/')
     res.end(`Will add the guide: ${req.body.name} with description: ${req.body.description}`);
 })
 .put((req, res) => {
-    res.end(`Will update the event: ${req.body.name} with description: ${req.body.description}`);
+    res.end(`Will update the guide: ${req.body.name} with description: ${req.body.description}`);
 })
 .delete((req, res) => {
-    res.end('Deleting all events');
+    res.end('Deleting all guides');
 });
 
-module.exports = eventRouter;
+module.exports = guideRouter;
